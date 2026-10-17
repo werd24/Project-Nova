@@ -1,0 +1,134 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\drew6>mkdir Project_Nova
+
+C:\Users\drew6>mkr Project-Nova
+'mkr' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\drew6>mkdir Project-Nova
+
+C:\Users\drew6>cd Project-Nova
+
+C:\Users\drew6\Project-Nova>git init
+Initialized empty Git repository in C:/Users/drew6/Project-Nova/.git/
+
+C:\Users\drew6\Project-Nova>git init
+Reinitialized existing Git repository in C:/Users/drew6/Project-Nova/.git/
+
+C:\Users\drew6\Project-Nova>echo "auth service logic" > auth-service.js
+
+C:\Users\drew6\Project-Nova>git add auth-service.js
+
+C:\Users\drew6\Project-Nova>git commit -m "Added initial auth service logic."
+[master (root-commit) f067a64] Added initial auth service logic.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 auth-service.js
+
+C:\Users\drew6\Project-Nova>git branch feature/payment-gateaway
+
+C:\Users\drew6\Project-Nova>git checkout feature/payment-gateway
+error: pathspec 'feature/payment-gateway' did not match any file(s) known to git
+
+C:\Users\drew6\Project-Nova>
+
+C:\Users\drew6\Project-Nova>git checkout -b feature/payment-gateway
+Switched to a new branch 'feature/payment-gateway'
+
+C:\Users\drew6\Project-Nova>git branch feature/payment-gateaway
+fatal: a branch named 'feature/payment-gateaway' already exists
+
+C:\Users\drew6\Project-Nova>git checkout feature/payment-gateway
+Already on 'feature/payment-gateway'
+
+C:\Users\drew6\Project-Nova>git push --set-upstream origin feature/payment-gateway
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\drew6\Project-Nova>git remote add origin https://github.com/werd24/Project-Nova.git
+
+C:\Users\drew6\Project-Nova>git push --set-upstream origin feature/payment-gateway
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 253 bytes | 253.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/werd24/Project-Nova.git
+ * [new branch]      feature/payment-gateway -> feature/payment-gateway
+branch 'feature/payment-gateway' set up to track 'origin/feature/payment-gateway'.
+
+C:\Users\drew6\Project-Nova>git pull origin main
+fatal: couldn't find remote ref main
+
+C:\Users\drew6\Project-Nova>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/werd24/Project-Nova.git'
+
+C:\Users\drew6\Project-Nova>git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/werd24/Project-Nova/pull/new/master
+remote:
+To https://github.com/werd24/Project-Nova.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\drew6\Project-Nova>git pull origin main
+fatal: couldn't find remote ref main
+
+C:\Users\drew6\Project-Nova>git status
+On branch feature/payment-gateway
+Your branch is up to date with 'origin/feature/payment-gateway'.
+
+nothing to commit, working tree clean
+
+C:\Users\drew6\Project-Nova>git add auth-service.js
+
+C:\Users\drew6\Project-Nova>git commit -m "Added initial auth service logic."
+On branch feature/payment-gateway
+Your branch is up to date with 'origin/feature/payment-gateway'.
+
+nothing to commit, working tree clean
+
+C:\Users\drew6\Project-Nova>git branch -M main
+
+C:\Users\drew6\Project-Nova>git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/werd24/Project-Nova/pull/new/main
+remote:
+To https://github.com/werd24/Project-Nova.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\drew6\Project-Nova>git pull origin main
+From https://github.com/werd24/Project-Nova
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\drew6\Project-Nova>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\drew6\Project-Nova>git add config.js
+fatal: pathspec 'config.js' did not match any files
+
+C:\Users\drew6\Project-Nova>echo // config > config.js
+
+C:\Users\drew6\Project-Nova>git add config.js
+
+C:\Users\drew6\Project-Nova>git commit -m "Resolved conflict in config.js"
+[main 4bd9527] Resolved conflict in config.js
+ 1 file changed, 1 insertion(+)
+ create mode 100644 config.js
+
+C:\Users\drew6\Project-Nova>
+
+C:\Users\drew6\Project-Nova>
