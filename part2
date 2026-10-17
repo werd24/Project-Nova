@@ -1,0 +1,10 @@
+"Oops, wrong file" Problem - git restore --staged.env or git reset HEAD.env
+"Typo in the message" - git commit--amend -m "Fixed authentication typo"
+"Forgot a file" problem adding style.css - git add styles.css, git commit --amend --no-edit
+"I hate these changes" uncommited changes in index.html - git restore index.html or git checkout --index.html
+"Wrong batch" problem - git branch new-feautre, girt reset HEAD~3 --hard, git checkout new-feature
+"Detached HEAD" - git switch -c recovery branch or git checkout -b recovery branch
+"Undo a pushed mistake" - git revert <buggy-commit-hash>
+"Accidental deletion" - git branch <deleted-branch-name> <commit-hash>
+"Ghost files" - git add -u or git rm<filename>
+"Pushed to the void" -git push origin --delete testing-junk 
