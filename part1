@@ -1,0 +1,9 @@
+Initialization - git init
+staging - git add auth-service.js
+committing - git commit -m "Added initial auth service logic."
+branching - git branch feature/payment-gateway
+navigation - git checkout feature/payment-gateway
+publishing - git push --set-upstream origin feature/payment-gateway
+syncing - git pull origin main
+conflict check- git status
+resolution - git commit -m "Resolved conflict in config.js"
